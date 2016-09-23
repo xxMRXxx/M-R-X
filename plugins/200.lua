@@ -573,7 +573,7 @@ ws[187] = "الصاعقة" -- msg
 rs[187] ="آقۆئ ۆآفَضلُ سۆرٍس📡شُڪرٍآ لُِآخـتيآرٍڪ يآرٍڪ " 
 
 ws[188] = "اريد سورس" -- msg 
-rs[188] ="https://github.com/Joker-development/Joker_development😍❤️️" 
+rs[188] ="https://github.com/devlopers1/th3-stun😍❤️️" 
 
 -- the main function 
 function run( msg, matches ) 
