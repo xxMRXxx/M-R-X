@@ -40,7 +40,7 @@ DEV👇👇👇
 🔱 @martn111 
 🔱 @Joodi1996 
 🔱 @awmsgn 
-
+كروب الدعـم: https://telegram.me/joinchat/DpFSq0D4cy7HGX7PCnfv3g
 ]] 
 end 
 
