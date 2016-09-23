@@ -6,7 +6,7 @@
 do
 
 local function run(msg, matches)
-if is_sudo(msg) and matches[1]== "sudo" then
+if is_sudo(msg) and matches[1]== "م مطور" then
 return [[
 اوامر المطور 👮
 ـَـَــَـَـَــَـَـَــَـَـَــَـَـَــَـَـَــَـَـَــَـَـَــَـَـَــَـَـَــَـَـَــَـَـَــَ
@@ -53,7 +53,7 @@ return {
 description = "Help list", 
 usage = "Help list",
 patterns = {
-"(sudo)"
+"(م مطور)"
 },
 run = run 
 }
