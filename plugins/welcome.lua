@@ -39,7 +39,7 @@ local function axis(msg,matches)
     ..'🕚 الوقت : '..os.date(' %T*', os.time())..'\n'  
      ..'➖➖➖➖➖ـ'..'\n'
     ..'🕵قناة السورس : @DEV_the_stun'..'\n'
-    ..'🕵بوت التواصل : @Ali_alsaed_bot'..'\n'..'\n'
+    ..'🕵بوت التواصل : @stunbot'..'\n'..'\n'
         return reply_msg(msg.id, text, ok_cb, false)
   end
 end
