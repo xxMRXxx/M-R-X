@@ -49,7 +49,6 @@ do local _ = {
     "sudo",
     "k4",
     "200",
-    "dletemsg",
     "newgroup",
     "delete",
     "fukyou",
