@@ -58,8 +58,8 @@ chmod +x launch.sh
 المطورين 
 
 #DEV_ @martn111
-#DEV_ @awmsgn
+#DEV_ @akfdhbg
 #DEV_ @Joodi1996
-بوت التواصل_ @Ali_alsaed_bot
+بوت التواصل_ @stunbot
 قناة السورس_ @DEV_the_stun
 
