@@ -23,10 +23,11 @@ function run(msg, matches)
 اي استفسار راسل المطورين😉 
 DEV👇👇👇 
 @martn111 
-@awmsgn 
+@akfdhbg
 @Joodi1996 
 @DEV_the_stun   👈قناة السورس👈 
-@Ali_alsaed_bot 👈بوت تواصل المحضورين👈 
+    
+@stunbot 👈بوت تواصل المحضورين👈 
 كروب الـدعم: https://telegram.me/joinchat/DpFSq0D4cy7HGX7PCnfv3g
 ]] 
 
