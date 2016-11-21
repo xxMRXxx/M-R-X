@@ -37,7 +37,7 @@ local function check_member_super(cb_extra, success, result)
       end 
       data[tostring(groups)][tostring(msg.to.id)] = msg.to.id 
       save_data(_config.moderation.data, data) 
- local text = 'تم تفعيل الصاعقة بنجاح : ✅ in Group🔹'..msg.to.title
+     local text = 'تم تفعيل البوت بنجاح : ✅ in Group🔹'..msg.to.title 
       return reply_msg(msg.id, text, ok_cb, false) 
     end 
   end 
@@ -61,7 +61,7 @@ local function check_member_superrem(cb_extra, success, result)
       end 
       data[tostring(groups)][tostring(msg.to.id)] = nil 
       save_data(_config.moderation.data, data) 
-      local text = 'تـم تـعـطـيل الصاعقة⚠️: ❎ in Group🔹'..msg.to.title
+      local text = '⚠️تـم تـعـطـيـل الـمـجـمـوعـه⚠️: ❎ in Group🔹'..msg.to.title 
       return reply_msg(msg.id, text, ok_cb, false) 
     end 
   end 
@@ -219,11 +219,11 @@ local function unlock_group_all(msg, data, target)
   end 
   local group_all_lock = data[tostring(target)]['settings']['all'] 
   if group_all_lock == 'no' then 
-    return 'تم فتح الدردشة الغو براحتكم 😻🍃 🔓\n👮 الامر بواسطة :️ @'..msg.from.username 
+    return 'تم فتح الدردشة 😻🍃 🔓\n👮 الامر بواسطة :️ @'..msg.from.username 
   else 
     data[tostring(target)]['settings']['all'] = 'no' 
     save_data(_config.moderation.data, data) 
-    return 'الدردشة غير مقفوله 😒 متلغون 🔓\n👮 الامر بواسطة :️ @'..msg.from.username 
+    return 'الدردشة غير مقفوله  🔓\n👮 الامر بواسطة :️ @'..msg.from.username 
 
   end 
 end 
@@ -1030,7 +1030,7 @@ function show_supergroup_settingsmod(msg, target)
    end 
   local gp_type = data[tostring(msg.to.id)]['group_type'] 
   local settings = data[tostring(target)]['settings'] 
-  local text = "🎗➖➖➖🎗➖➖➖🎗\nℹ️اعدادات المجموعة: ⬇️\n💟اسم المجموعة : "..msg.to.title.."\n🎗➖➖➖🎗➖➖➖🎗\n🔗قفل الروابط : "..settings.lock_link.."\n📵قفل الجهات: "..settings.lock_contacts.."\n🔐قفل التكرار: "..settings.flood.."\n👾Flood sensitivity : "..NUM_MSG_MAX.."\n📊قفل الكلايش: "..settings.lock_spam.."\n🆎قفل العربية: "..settings.lock_arabic.."\n🔠قفل الانكلش: "..settings.english.."\n👤قفل الاضافة: "..settings.lock_member.."\n📌Lock RTL: "..settings.lock_rtl.."\n🔯: "..settings.lock_tgservice.."\n🎡قفل الملصقات: "..settings.lock_sticker.."\n➕قفل التاك(#): "..settings.tag.."\n😃قفل السمايلات: "..settings.emoji.."\n🤖قفل البوتات: "..bots_protection.."\n↩️قفل  اعادة توجيه(forward): "..settings.fwd.."\n🔃قفل الرد: "..settings.reply.."\n🚷قفل الدخول عبر الرابط: "..settings.join.."\n♏️قفل اليوزرنيم(@): "..settings.username.."\n🆘قفل الميديا: "..settings.media.."\n🏧قفل الكلمات السيئة: "..settings.fosh.."\n🚶قفل المغادرة: "..settings.leave.."\n🔕قفل المحادثة: "..settings.all.."\n🎗➖➖➖🎗➖➖➖🎗\nℹ️وصف المجموعة ⬇️\n🎗➖➖➖🎗➖➖➖🎗\n⚠️Group type: "..gp_type.."\n✳️Public: "..settings.public.."\n⛔️Strict settings: "..settings.strict.."\n🎗➖➖➖🎗➖➖➖🎗\nℹ️bot version : v1\n\n🌐 th3_stun 🌐 \n 🎗➖➖➖🎗➖➖➖🎗 \n 🚀 #DEV :@martn111 \n 🚀#DEV : @joodi1996 \n 🚀 #DEV : @@akfdhbg \n 🎗➖➖➖🎗➖➖➖🎗 \n 📱#channl : @DEV_the_stun " 
+  local text = "🎗➖➖➖🎗➖➖➖🎗\nℹ️اعدادات المجموعة: ⬇️\n💟اسم المجموعة : "..msg.to.title.."\n🎗➖➖➖🎗➖➖➖🎗\n🔗قفل الروابط : "..settings.lock_link.."\n📵قفل الجهات: "..settings.lock_contacts.."\n🔐قفل التكرار: "..settings.flood.."\n👾Flood sensitivity : "..NUM_MSG_MAX.."\n📊قفل الكلايش: "..settings.lock_spam.."\n🆎قفل العربية: "..settings.lock_arabic.."\n🔠قفل الانكلش: "..settings.english.."\n👤قفل الاضافة: "..settings.lock_member.."\n📌Lock RTL: "..settings.lock_rtl.."\n🔯: "..settings.lock_tgservice.."\n🎡قفل الملصقات: "..settings.lock_sticker.."\n➕قفل التاك(#): "..settings.tag.."\n😃قفل السمايلات: "..settings.emoji.."\n🤖قفل البوتات: "..bots_protection.."\n↩️قفل  اعادة توجيه(forward): "..settings.fwd.."\n🔃قفل الرد: "..settings.reply.."\n🚷قفل الدخول عبر الرابط: "..settings.join.."\n♏️قفل اليوزرنيم(@): "..settings.username.."\n🆘قفل الميديا: "..settings.media.."\n🏧قفل الكلمات السيئة: "..settings.fosh.."\n🚶قفل المغادرة: "..settings.leave.."\n🔕قفل المحادثة: "..settings.all.."\n🎗➖➖➖🎗➖➖➖🎗\nℹ️وصف المجموعة ⬇️\n🎗➖➖➖🎗➖➖➖🎗\n⚠️Group type: "..gp_type.."\n✳️Public: "..settings.public.."\n⛔️Strict settings: "..settings.strict.."\n🎗➖➖➖🎗➖➖➖🎗\nℹ️bot version : v1.1\n\n🌐 ƵȺƵȺ_ɃøŢ 🌐 \n 🎗➖➖➖🎗➖➖➖🎗 \n 🚀 #DEV :@modee123 \n 🚀#DEV : @wounds1 \n 🚀 #DEV : @lll_5 \n 🎗➖➖➖🎗➖➖➖🎗 \n 📱#channl : @C9_pro " 
    return text 
 end 
 
@@ -1587,12 +1587,12 @@ local function DevPointTeam(msg, matches)
    local print_name = user_print_name(msg.from):gsub("‮", "") 
    local name_log = print_name:gsub("_", " ") 
    local data = load_data(_config.moderation.data) 
-         if matches[1] == 'تفعيل الصاعقة' and not matches[2] then
+         if matches[1] == 'تفعيل البوت' and not matches[2] then 
          if not is_admin1(msg) and not is_support(support_id) then 
             return 
          end 
          if is_super_group(msg) then 
-        local iDev1 = "الصاعقة ✅ بلتاكيد ❣ مفعل بلمجموعه كبد عمري😉 💻📲"
+        local iDev1 = "المجموعه ✅ بلتاكيد ❣ مفعله 💻📲" 
          return send_large_msg(receiver, iDev1) 
          end 
          print("SuperGroup "..msg.to.print_name.."("..msg.to.id..") added") 
@@ -1610,7 +1610,7 @@ local function DevPointTeam(msg, matches)
          superrem(msg) 
          rem_mutes(msg.to.id) 
       end 
-      if matches[1] == 'تعطيل الصاعقة' and is_admin1(msg) and not matches[2] then
+      if matches[1] == 'تعطيل البوت' and is_admin1(msg) and not matches[2] then 
          if not is_super_group(msg) then 
             return reply_msg(msg.id, 'SuperGroup is not added.', ok_cb, false) 
          end 
@@ -1993,7 +1993,7 @@ local function DevPointTeam(msg, matches)
          elseif not string.match(matches[2], '^%d+$') then 
             local cbres_extra = { 
                channel = get_receiver(msg), 
-               get_cmd = 'تنزيل العضو'
+               get_cmd = 'نزل ادمن' 
             } 
             local username = matches[2] 
             local username = string.gsub(matches[2], '@', '') 
@@ -2704,8 +2704,8 @@ end
 
 return { 
   patterns = { 
-   "^(تفعيل الصاعقة)$", 
-   "^(تعطيل الصاعقة)$", 
+   "^(تفعيل البوت)$", 
+   "^(تعطيل البوت)$", 
    "^([Mm]ove) (.*)$", 
    "^(معلومات المجموعة)$", 
    "^(الادمنية)$", 
