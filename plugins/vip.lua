@@ -1,12 +1,4 @@
---[[ 
-▀▄ ▄▀▀▄▄▀▀▄▄▀▀▄▄▀▀▄▄▀▀▄▄▀▀▄▄▀▀▄▀▄▄▀▀▄▄▀▀▄▄▀▀▄▄▀▀ 
-▀▄ ▄▀                                                               ▀▄ ▄▀ 
-▀▄ ▄▀    BY DEV KASPER                                  ▀▄ ▄▀ 
-▀▄ ▄▀   BY KASPER (@kasper_dev)                     ▀▄ ▄▀ 
-▀▄ ▄▀ JUST WRITED BY DEV KASPER           ▀▄ ▄▀ 
-▀▄ ▄▀   orders   :    vip                                   ▀▄ ▄▀ 
-▀▄▀▀▄▄▀▀▄▄▀▄▄▀▀▄▄▀▀▄▄▀▄▄▀▀▄▄▀▀▄▄▀▄▄▀▀▄▄▀▀▄▄▀▄▄▀▀ 
---]]  
+
 local function check_member_superrem2(cb_extra, success, result)
 local receiver = cb_extra.receiver
 local data = cb_extra.data
@@ -111,6 +103,3 @@ patterns = {
 run = run,
 pre_process = pre_process
 }
---[[
-امانة الله ورسولة هاذه الاصل ايراني مو ماتي 
---]]
