@@ -45,7 +45,7 @@ do local _ = {
     "h1",
     "h2",
     "h3",
-    "sudo",
+    "dev",
     "h4",
     "broadcast",
     "1",
